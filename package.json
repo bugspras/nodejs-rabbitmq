@@ -1,0 +1,28 @@
+{
+  "name": "tes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "task1_api": "npx ts-node ./task_1/index.ts",
+    "task2_consumer": "npx ts-node ./task_2/consumer.ts",
+    "task2_publisher_create": "npx ts-node ./task_2/publisher_create.ts",
+    "task2_publisher_update": "npx ts-node ./task_2/publisher_update.ts",
+    "task2_publisher_delete": "npx ts-node ./task_2/publisher_delete.ts",
+    "task3_api": "npx ts-node ./task_3/index.ts",
+    "task3_consumer": "npx ts-node ./task_3/consumer.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.11.24",
+    "amqplib": "^0.10.3",
+    "body-parser": "^1.20.2",
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "express-queue": "^0.0.13",
+    "mysql": "^2.18.1"
+  }
+}
