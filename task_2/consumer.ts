@@ -124,9 +124,9 @@ async function connect() {
       if (input.command == 'create'){
         add_tes(input.data.nama,input.data.status,dd)
       }else if(input.command == 'update'){
-        await edit_tes(input.data.id,input.data.nama,input.data.status,dd)
+        edit_tes(input.data.id,input.data.nama,input.data.status,dd)
       } else if(input.command == 'delete') {
-        await delete_tes(input.data.id)
+        delete_tes(input.data.id)
       }channel.ack(message);
     });
 
